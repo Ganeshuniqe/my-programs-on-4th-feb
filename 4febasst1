@@ -1,0 +1,33 @@
+/*YALLA GANESH-ADCELR*/
+#include <stdio.h>
+#include<string.h>
+void main()
+{
+    char ch[20];
+    int n,i,count=0;
+    char c;
+     printf("enter name:");
+    gets(ch);
+    n=strlen(ch);
+    for(i=0;i<n;i++)
+    {
+        c=ch[i];
+        switch(c)
+        {
+        case 'A':
+        case 'a':
+        case 'E':
+        case 'e':
+        case 'I':
+        case 'i':
+        case 'O':
+        case 'o':
+        case 'U':
+        case 'u':count++;break;
+        default:
+        printf("%c",c);
+       }
+    }
+printf("total no of vowels:%d \n",count);
+printf("total no of consonants:%d",strlen(ch)-count);
+}
